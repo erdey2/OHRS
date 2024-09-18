@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
-from login.models import RoomManager
-from reservation.models import Reservation, Room
+from hotel_reservation.login.models import RoomManager
+from hotel_reservation.reservation.models import Reservation, Room
 from datetime import date
 from django.contrib import messages
 import datetime
