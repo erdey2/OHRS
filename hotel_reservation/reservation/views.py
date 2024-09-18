@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Contact
 from .models import Room, Reservation
-from login.models import Customer
+from hotel_reservation.login.models import Customer
 from django.contrib import messages
 from django.http import HttpResponse
 import datetime
