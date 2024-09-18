@@ -1,13 +1,13 @@
 from rest_framework import viewsets
-from login.models import Customer
-from reservation.models import Reservation,Room
+from hotel_reservation.login.models import Customer
+from hotel_reservation.reservation.models import Reservation, Room
 from . import serializers
 
 class CustomerViewset(viewsets.ModelViewSet):
     queryset = Customer.objects.all()
     serializer_class = serializers.UserSerializer
 
-class RoomsViewset(viewsets.ModelViewSet):
+class RoomViewset(viewsets.ModelViewSet):
     queryset = Room.objects.all()
     serializer_class = serializers.RoomsSerializer
 
