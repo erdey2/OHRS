@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
-from login.models import Customer
-from reservation.models import Reservation
+from hotel_reservation.login.models import Customer
+from hotel_reservation.reservation.models import Reservation
 import datetime
 def dashboard(request):
   if request.session.get('username',None) and request.session.get('type',None)=='manager':
